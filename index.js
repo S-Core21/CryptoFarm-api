@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const User = require('./models/user')
+const cookieParser = require('cookie-parser')
 
 
 const app = express()
@@ -28,6 +29,8 @@ db.once('open', ()=>{
 app.listen(port, ()=>{
     console.log('server is running on port 5000')
 })
+
+app.use(cookieParser())
 
 app.post('/users', (req,res)=>{
     const newUser = new User({
