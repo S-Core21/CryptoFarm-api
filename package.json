@@ -1,8 +1,4 @@
 {
-  "engines": {
-    "node": "18.18.0",
-    "npm": "10.1.0"
-  },
   "name": "benny-server",
   "version": "1.0.0",
   "description": "",
