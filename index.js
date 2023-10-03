@@ -2,6 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const User = require('./models/user')
 const cookieParser = require('cookie-parser')
+const cors = require('cors')
 
 
 const app = express()
@@ -31,6 +32,7 @@ app.listen(port, ()=>{
 })
 
 app.use(cookieParser())
+app.use(cors())
 
 app.post('/users', (req,res)=>{
     const newUser = new User({
