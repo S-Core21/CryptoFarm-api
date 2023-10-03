@@ -5,7 +5,8 @@ const User = require('./models/user')
 
 const app = express()
 const port = 5000
-const connectUrl = 'mongodb+srv://cryptofarmer714:ILTrnj1QOFU8MuV2@forms.yiq9ifr.mongodb.net/?retryWrites=true&w=majority'
+const connectUrl = 'mongodb+srv://cryptofarmer714:lLTrnj1QOFU8MuV2@forms.yiq9ifr.mongodb.net/?retryWrites=true&w=majority'
+const connectUrl2 = "mongodb+srv://cryptofarmer714:lLTrnj1QOFU8MuV2@forms.yiq9ifr.mongodb.net/test?ssl=true&sslCAFile=/path/to/ca.pem&sslCertFile=/path/to/client.pem&sslKeyFile=/path/to/client-key.pem"
 
 mongoose.connect(connectUrl,{
     useNewUrlParser: true,
